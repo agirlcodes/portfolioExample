@@ -1,7 +1,7 @@
 {
     "portfolio": [
         {
-            "title": "Exapmle 1",
+            "title": "Example 10",
             "imageLink": "assets/jojo.png",
             "open":[
                 {
@@ -12,7 +12,7 @@
             ]
         },
         {
-            "title": "Exapmle 2",
+            "title": "Example 2",
             "imageLink": "assets/jojo.png",
             "open":[
                 {
@@ -23,7 +23,7 @@
             ]
         },
         {
-            "title": "Exapmle 3",
+            "title": "Example 3",
             "imageLink": "assets/jojo.png",
             "open":[
                 {

@@ -1,0 +1,119 @@
+{
+    "portfolio": [
+        {
+            "title": "Exapmle 1",
+            "imageLink": "assets/jojo.png",
+            "open":[
+                {
+                    "image1":"I am here",
+                    "image2":"",
+                    "image3":""
+                }
+            ]
+        },
+        {
+            "title": "Exapmle 2",
+            "imageLink": "assets/jojo.png",
+            "open":[
+                {
+                    "image1":"I am here",
+                    "image2":"",
+                    "image3":""
+                }
+            ]
+        },
+        {
+            "title": "Exapmle 3",
+            "imageLink": "assets/jojo.png",
+            "open":[
+                {
+                    "image1":"I am here",
+                    "image2":"",
+                    "image3":""
+                }
+            ]
+        }
+    ],
+    "gallery": [
+        {
+            "imageLink": "assets/jojo.png",
+            "open":[
+                {
+                    "image1":"I am here",
+                    "image2":"",
+                    "image3":""
+                }
+            ]
+        },
+        {
+            "imageLink": "assets/jojo.png",
+            "open":[
+                {
+                    "image1":"I am here",
+                    "image2":"",
+                    "image3":""
+                }
+            ]
+        },
+        {
+            "imageLink": "assets/jojo.png",
+            "open":[
+                {
+                    "image1":"I am here",
+                    "image2":"",
+                    "image3":""
+                }
+            ]
+        },
+        {
+            "imageLink": "assets/jojo.png",
+            "open":[
+                {
+                    "image1":"I am here",
+                    "image2":"",
+                    "image3":""
+                }
+            ]
+        },
+        {
+            "imageLink": "assets/jojo.png",
+            "open":[
+                {
+                    "image1":"I am here",
+                    "image2":"",
+                    "image3":""
+                }
+            ]
+        },
+        {
+            "imageLink": "assets/jojo.png",
+            "open":[
+                {
+                    "image1":"I am here",
+                    "image2":"",
+                    "image3":""
+                }
+            ]
+        },
+        {
+            "imageLink": "assets/jojo.png",
+            "open":[
+                {
+                    "image1":"I am here",
+                    "image2":"",
+                    "image3":""
+                }
+            ]
+        },
+        {
+            "imageLink": "assets/jojo.png",
+            "open":[
+                {
+                    "image1":"I am here",
+                    "image2":"",
+                    "image3":""
+                }
+            ]
+        }
+    ]
+}

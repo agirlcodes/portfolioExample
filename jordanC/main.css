@@ -64,6 +64,7 @@ body header #subHeading {
   float: inline-start;
 }
 body header #landing-graphic {
+  height: 300px;
   display: flex;
   justify-content: center;
 }
@@ -71,15 +72,16 @@ body header #landing-graphic #circle {
   background-color: #015B5D;
   z-index: -9;
   min-width: 15rem;
-  left: 55%;
+  left: 45%;
   top: 15%;
-  width: 50%;
+  width: 60rem;
+  aspect-ratio: 1;
   border-radius: 50%;
 }
-body header #landing-graphic #circle::after {
-  content: "";
-  display: block;
-  padding-bottom: 100%;
+body header #landing-graphic #circle img {
+  margin-top: 10%;
+  max-width: 80%;
+  margin-left: 5%;
 }
 body main {
   background: #0D0C0C;
@@ -139,18 +141,19 @@ body main #skills .container h2 {
   color: #015B5D;
 }
 body main #skills .container .circle-skill {
-  gap: 2.5rem;
   margin-left: 5%;
   padding: 1%;
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  width: 90%;
 }
 body main #skills .container .circle-skill li {
-  width: 20vw;
+  gap: 1rem;
+  width: 60%;
 }
 body main #skills .container .circle-skill li img {
-  width: 90%;
+  width: 70%;
 }
 body main #skills .container .circle-skill li .skill-layout h4 {
   color: #FFF2E6;

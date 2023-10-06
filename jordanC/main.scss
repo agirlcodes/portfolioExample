@@ -215,19 +215,25 @@ body{
                     .products{
                         background-color: #FFF2E6;
                         margin: 10% 0% 5% 5%;
-                        border-radius: 15px;
-                        // width: 90%;
-                        width: 350px;
-                        min-width: 260px;
+                        border-radius: 20px;
+                        width: 27em;
+                        min-width: fit-content;
+                        min-height: fit-content;
+                        // height: 26rem;
+                        // padding: 1%;
+                        // min-width: 260px;
                         h3{
                             color: #015B5D;
                             text-align: center;
                             padding: 2%;
                         }
                         img{
-                            margin: 5%;
-                            max-width: 90%;
+                            // margin: 5%;
+                            width: 90%;
+                            // min-width: 10rem;
                             border-radius: 20px;
+                            margin-left: 5%;
+                            margin-top: 5%;
                         }
                     }
 

@@ -193,9 +193,12 @@ body main #portfolio .ux .portfolio-container {
 body main #portfolio .ux .portfolio-container .products {
   background-color: #FFF2E6;
   margin: 10% 0% 5% 5%;
-  border-radius: 15px;
-  width: 350px;
-  min-width: 260px;
+  border-radius: 20px;
+  width: 27em;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
 }
 body main #portfolio .ux .portfolio-container .products h3 {
   color: #015B5D;
@@ -203,9 +206,10 @@ body main #portfolio .ux .portfolio-container .products h3 {
   padding: 2%;
 }
 body main #portfolio .ux .portfolio-container .products img {
-  margin: 5%;
-  max-width: 90%;
+  width: 90%;
   border-radius: 20px;
+  margin-left: 5%;
+  margin-top: 5%;
 }
 body main #portfolio .graphic-design {
   background-color: #FFF2E6;

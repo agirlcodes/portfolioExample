@@ -86,98 +86,111 @@ body header #landing-graphic #circle img {
 body main {
   background: #0D0C0C;
 }
-body main #aboutMe {
+body main .about-layout {
   padding: 6% 5% 1% 5%;
-  display: flex;
-  flex-flow: row wrap;
-  flex-wrap: wrap;
+  display: grid;
+  grid-auto-columns: 2fr 2fr;
+  grid-template-rows: 2em auto-fit auto-fit;
+  grid-gap: 0%;
 }
-body main #aboutMe .sideLayout {
-  display: flex;
+body main .about-layout .section-title {
+  grid-column: 2;
+  grid-row: 1;
+  padding: 0;
 }
-body main #aboutMe .sideLayout img {
-  max-width: 70%;
+body main .about-layout .section-image {
+  grid-column: 1/span 2;
+  grid-row: 2;
+  width: 40%;
+  max-width: 40rem;
 }
-body main #aboutMe h2, body main #aboutMe h3, body main #aboutMe p {
+body main .about-layout h3, body main .about-layout p {
   color: #FFF2E6;
 }
-body main #aboutMe ul {
-  padding: 0%;
+body main .about-layout h2 {
+  color: #FFF2E6;
+  font-size: 2em;
+}
+body main .about-layout .section-content {
+  grid-row: 2;
+  grid-column: 2;
+  width: 95%;
+  margin-top: 2%;
+}
+body main .about-layout .link-layout {
+  grid-row: 3;
+  grid-column: 1/span 2;
   padding-top: 2%;
-  width: 100%;
-  flex: 1;
-}
-body main #aboutMe ul .box-layout-one {
   display: flex;
-  flex-direction: row;
+  flex-flow: row wrap;
 }
-body main #aboutMe ul li {
-  height: 100px;
-  width: 700px;
-  background: #FFF2E6;
-  max-width: 40vh;
+body main .about-layout .link-layout .box-layout-one {
+  max-width: 550px;
+  min-width: 30%;
+  max-height: 200px;
+  width: 40%;
+  background-color: #FFF2E6;
   border-radius: 20px;
   text-align: center;
   margin: 0.5em;
-  padding: 5px;
-}
-body main #aboutMe ul li a {
   text-decoration: none;
   color: #015B5D;
-}
-body main #aboutMe ul li svg {
-  height: 50px;
 }
 body main #skills {
   background-color: #FFF2E6;
   margin-left: 5%;
 }
-body main #skills .container {
-  padding: 1%;
-  margin-left: 5%;
-  max-width: 80%;
-}
-body main #skills .container h2 {
+body main #skills h2 {
+  padding-top: 5%;
+  padding-left: 5%;
   color: #015B5D;
 }
+body main #skills .container {
+  padding: 1%;
+  padding-left: 6%;
+  max-width: 80%;
+}
 body main #skills .container .circle-skill {
-  margin-left: 5%;
+  margin-left: 20%;
+  margin-top: 15;
   padding: 1%;
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-evenly;
-  width: 90%;
+  gap: 5em;
 }
 body main #skills .container .circle-skill li {
-  gap: 1rem;
-  width: 60%;
+  min-width: 5em;
+  max-width: 10em;
 }
 body main #skills .container .circle-skill li img {
-  width: 70%;
-}
-body main #skills .container .circle-skill li .skill-layout h4 {
-  color: #FFF2E6;
+  width: 100%;
 }
 body main #skills .container .skill-container {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
+  gap: 0.5em;
+  margin-left: 5%;
+  margin-top: 5%;
+  margin-bottom: 10%;
+  width: 90%;
+  max-height: 15em;
   background-color: #015B5D;
   border-radius: 20px;
-  margin-left: 5%;
-  margin-top: 10%;
-  margin-bottom: 10%;
-  width: 100%;
-  max-width: 600px;
   color: #FFF2E6;
+  padding: 1% 5% 1% 5%;
 }
 body main #skills .container .skill-container .skill-list {
-  padding: 0;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  width: 90%;
+  height: 50%;
+  flex-direction: row;
+  padding-left: 10%;
 }
 body main #skills .container .skill-container .skill-list li {
-  padding-top: 0.5rem;
+  padding-top: 0.7em;
   padding-bottom: 0.5rem;
   text-align: left;
+  width: 30%;
 }
 body main #portfolio {
   background-color: #015B5D;
@@ -301,5 +314,109 @@ body footer ul a {
     aspect-ratio: 1;
     top: 2rem;
     cursor: pointer;
+  }
+  body main {
+    background: #0D0C0C;
+  }
+  body main .about-layout {
+    padding: 6% 5% 1% 5%;
+    display: grid;
+    grid-template-columns: 100%;
+  }
+  body main .about-layout .section-title {
+    grid-row: 1;
+    grid-column: 1;
+    text-align: center;
+  }
+  body main .about-layout .section-image {
+    grid-column: 1;
+    grid-row: 2;
+    width: 95%;
+  }
+  body main .about-layout h2, body main .about-layout h3, body main .about-layout p {
+    color: #FFF2E6;
+  }
+  body main .about-layout .section-content {
+    grid-row: 3;
+    grid-column: 1;
+    width: 100%;
+  }
+  body main .about-layout .link-layout {
+    grid-column: 1;
+    grid-row: 4;
+    padding-top: 2%;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-gap: 5%;
+    margin-left: 0%;
+  }
+  body main .about-layout .link-layout .box-layout-one {
+    height: 100px;
+    max-width: 550px;
+    min-width: 30%;
+    width: 90%;
+    background-color: #FFF2E6;
+    border-radius: 20px;
+    text-align: center;
+    padding: 0px;
+    text-decoration: none;
+    margin: 0%;
+    color: #015B5D;
+  }
+  body main .about-layout #skills {
+    background-color: #FFF2E6;
+    margin-left: 5%;
+  }
+  body main .about-layout #skills h2 {
+    padding-top: 5%;
+    padding-left: 5%;
+    color: #015B5D;
+  }
+  body main .about-layout #skills .container {
+    padding: 1%;
+    padding-left: 6%;
+    max-width: 80%;
+  }
+  body main .about-layout #skills .container .circle-skill {
+    margin-left: 20%;
+    margin-top: 15;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+  body main .about-layout #skills .container .circle-skill li {
+    min-width: 5em;
+    max-width: 10em;
+  }
+  body main .about-layout #skills .container .circle-skill li img {
+    width: 100%;
+  }
+  body main .about-layout #skills .container .skill-container {
+    gap: 0.5em;
+    margin-left: 5%;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    width: 90%;
+    max-height: 15em;
+    background-color: #015B5D;
+    border-radius: 20px;
+    color: #FFF2E6;
+    padding: 1% 5% 1% 5%;
+  }
+  body main .about-layout #skills .container .skill-container .skill-list {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    width: 90%;
+    height: 50%;
+    flex-direction: row;
+    padding-left: 10%;
+  }
+  body main .about-layout #skills .container .skill-container .skill-list li {
+    padding-top: 0.7em;
+    padding-bottom: 0.5rem;
+    text-align: left;
+    width: 30%;
   }
 }/*# sourceMappingURL=main.css.map */

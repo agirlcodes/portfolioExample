@@ -90,8 +90,10 @@ body main .about-layout {
   padding: 6% 5% 1% 5%;
   display: grid;
   grid-auto-columns: 2fr 2fr;
-  grid-template-rows: 2em auto-fit auto-fit;
+  grid-auto-rows: 4em 3fr 300px;
   grid-gap: 0%;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
 }
 body main .about-layout .section-title {
   grid-column: 2;
@@ -121,14 +123,14 @@ body main .about-layout .link-layout {
   grid-row: 3;
   grid-column: 1/span 2;
   padding-top: 2%;
-  display: flex;
-  flex-flow: row wrap;
+  display: grid;
+  grid-template-columns: repeat(2, 45%);
+  grid-template-rows: repeat(2, 50%);
+  gap: 10px;
 }
 body main .about-layout .link-layout .box-layout-one {
   max-width: 550px;
-  min-width: 30%;
-  max-height: 200px;
-  width: 40%;
+  height: 90%;
   background-color: #FFF2E6;
   border-radius: 20px;
   text-align: center;
@@ -322,6 +324,7 @@ body footer ul a {
     padding: 6% 5% 1% 5%;
     display: grid;
     grid-template-columns: 100%;
+    grid-auto-rows: auto;
   }
   body main .about-layout .section-title {
     grid-row: 1;
@@ -346,15 +349,14 @@ body footer ul a {
     grid-row: 4;
     padding-top: 2%;
     display: grid;
-    grid-template-columns: repeat(2, 50%);
+    grid-template-columns: repeat(2, 45%);
+    grid-auto-rows: auto;
     grid-gap: 5%;
     margin-left: 0%;
   }
   body main .about-layout .link-layout .box-layout-one {
-    height: 100px;
-    max-width: 550px;
+    height: 150px;
     min-width: 30%;
-    width: 90%;
     background-color: #FFF2E6;
     border-radius: 20px;
     text-align: center;
